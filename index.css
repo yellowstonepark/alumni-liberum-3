@@ -1,0 +1,90 @@
+/*CSS Styling*/
+/*Version 1.0.0*/
+
+body {
+  background-color: azure;
+}
+
+.res-circle {
+  display: block;
+  width: 12%;
+  border-radius: 50%;
+  line-height: auto;
+  position: relative;
+  padding: 0px;
+  background: linear-gradient(150deg, #a7cfdf 0%,#000e2b 100%);
+  box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.9);
+}
+
+.res-circle::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.res-circle:hover {
+  background: linear-gradient(150deg, #a7cfdf 0%,#3f5e91 100%);
+  box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.9);
+}
+
+.circle-txt {
+  color: #eee;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.attendance {
+  display: block;
+  width: 30%;
+  border-radius: 50%;
+  line-height: auto;
+  position: relative;
+  padding: 0px;
+  background: linear-gradient(150deg, #a7cfdf 0%,#000e2b 100%);
+  box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.9);
+}
+
+.attendance::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.extralinks {
+  display: none;
+}
+
+.extralinks:hover {
+  margin-top: -50px;
+  display: block;
+  background: #555;
+}
+
+div ul li {
+  display: inline-block;
+  background: #666;
+  color: white;
+  position: relative;
+  padding-top: 0px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.res-circle:hover .extralinks {
+  display: block;
+}

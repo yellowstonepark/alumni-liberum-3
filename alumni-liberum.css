@@ -1,0 +1,169 @@
+/*The CSS file for the website: Alumni Liberum*/
+/*programming for the main body of the website*/
+body {
+  background-image: url();
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/*formatting for the section on the home page called "Introduction"*/
+#Introduction1 {
+  background-color: gray;
+}
+
+/*formatting for the section on the home page called "goals"*/
+#Goals {
+  background-color:#585858;
+}
+
+/*the title of the table about ways to reduce Screetime*/
+#Caption {
+  background-color: #28a4a4;
+  font-size: 300%;
+  caption-side: top;
+}
+
+/*formatting for anything that has a "heading 1"*/
+h1 {
+  color: black;
+  text-shadow: 5px 2px 4px orange;
+  padding-top: 15px;
+  border-style: hidden;
+  border-width: 10px;
+  font-size: 250%;
+}
+
+/*formatting for anything that has a "heading 2"*/
+h2 {
+  background-color:#196767;
+  font-size: 180%;
+}
+
+/*formatting for paragraphs*/
+p {
+  color:white;
+  background-color: gray;
+  font-size: 120%;
+  cursor: text;
+}
+
+/*Times New Roman font*/
+p.serif {
+   font-family: "Times New Roman", Times, serif;
+}
+
+/*bold font*/
+p.bold {
+   font-weight: bold;
+}
+
+/*the formating for the paragraphs on the home page (ffp: formatting for paragraphs)*/
+.ffp {
+  font-size: medium;
+  padding: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: green;
+}
+
+/*square bullet points*/
+ul.square {
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-image: none;
+  }
+
+/*the table for the goals of the Politcal Party (Screetime)*/
+table {
+  empty-cells: hide;
+  border-collapse: separate;
+}
+
+/*making it so that anytime you hover over a link, it becomes red*/
+a:hover {
+  color:red;
+  cursor: pointer;
+}
+
+/*making all code with the class=hidden become hidden (still takes up space)*/
+div.hidden {
+   visibility: hidden;
+}
+
+/*making all the code with the class=notthere become hidden (and don't take up space)*/
+div.notthere {
+   display: none;
+}
+
+/*Making all images float left*/
+img {
+  float: left;
+  margin-right: 10px;
+}
+
+.afterfloat {
+  clear: both;
+}
+
+.Class-Constitution {
+  width: 1500px;
+  height: 500px;
+  background-color: white;
+  float: left;
+  overflow: scroll;
+}
+
+.button {
+
+  --offset: 10px;
+  --border-size: 2px;
+
+  display: block;
+  position: relative;
+  padding: 1.5em 3em;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #e55743;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background .8s ease;
+
+  &:hover {
+    background: rgba(100, 0, 0, .03);
+  }
+
+  &__horizontal,
+  &__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform .8s ease;
+    will-change: transform;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border: inherit;
+    }
+  }
+
+  &__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+
+    &::before {
+      top: calc(var(--vertical-offset) - var(--border-size));
+      bottom: calc(var(--vertical-offset) - var(--border-size));
+      left: calc(var(--vertical-offset) * -1);
+      right: calc(var(--vertical-offset) * -1);
+    }
+  }
