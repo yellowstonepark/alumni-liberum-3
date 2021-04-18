@@ -1,6 +1,8 @@
 /*Version 2.04*/
 body {
   background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
@@ -10,12 +12,17 @@ body {
   animation-name: fadeIn;
   animation-duration: 2s;
   animation-delay: -0.05s;
+}
 
-  @media only screen and (max-width: 800px) {
-    font-size: 450%;
+@media only screen and (max-width: 800px) {
+  .nav {
+    font-size: 500%;
   }
 }
 
+/*CSS for the buttons on the page*/
+
+/*for the navigation buttons to other pages*/
 .orange {
   border: none;
   color: white;
@@ -37,6 +44,17 @@ body {
   color: white;
 }
 
+/*for the buttons that link to places on the page*/
+
+.internalNav {
+  display: block;
+}
+
+.buttons {
+  padding: 20px;
+  font-size: 1.25em;
+}
+
 #logo {
   float: left;
   margin-top: -40px;
@@ -45,23 +63,18 @@ body {
   animation-name: fadeIn;
   animation-duration: 2s;
   animation-delay: -0.05s;
-
-  @media only screen and (max-width: 800px) {
-    width: 200%;
-    length: 200%
-  }
 }
 
 .Paragragh {
     float: left;
-    color: white;
+    color: black;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     padding: 10px;
     border-style: solid;
     border-width: 5px;
     border-color: #000000;
-    background-color: #000124;
+    background-color: #FFF;
     margin-top: 50px;
 }
 
@@ -74,8 +87,10 @@ body {
 }
 
 .title {
-  font-family: "Roboto";
-  font-weight: 450;
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  font-size: 2em;
 }
 
 h1 {
@@ -102,26 +117,6 @@ h3 {
   animation-delay: -0.05s;
 }
 
-h4 {
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-delay: -0.05s;
-}
-
-h5 {
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-delay: -0.05s;
-}
-
-h6 {
-  font-size: 700%;
-
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-delay: -0.05s;
-}
-
 p {
   font-size: 120%;
 
@@ -141,16 +136,16 @@ li {
 }
 
 #x {
-  height: 650px;
+  height: 500px;
   length: 80%;
   overflow: hidden;
   color: black;
   font-weight: bold;
   font-style: oblique;
   background-color: white;
-  background-image: url(https://blog.datumize.com/hubfs/future%20goals.jpg);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/WA_80_cm_archery_target.svg/220px-WA_80_cm_archery_target.svg.png);
   background-repeat: no-repeat;
-  background-size: 99%;
+  background-size: 100%;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
@@ -162,7 +157,7 @@ li {
   background-color: white;
   length: 80%;
   opacity: 0.58;
-  height: 6500px;
+  height: auto;
   margin-top: -35px;
 }
 
@@ -187,10 +182,35 @@ a.tcl:hover {text-decoration: none;}
 
 .footer {
   clear: both;
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
   color: gray;
   background-color: #d9d9d9;
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 80%;
+}
+
+/*Custon Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
 }

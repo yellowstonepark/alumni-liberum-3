@@ -13,9 +13,10 @@ body {
 }
 
 .title {
-  font-family: 'Noto Serif', serif;
-  font-weight: 700;
-  font-size: 150%;
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  font-size: 4em;
 }
 
 .jgf {
@@ -96,21 +97,22 @@ body {
 
 /*formatting for the actual constitution section*/
 .The-Constitution {
+  float: left;
   padding-left: 10px;
   padding-right: 10px;
   width: 99%;
   min-height: 600px;
   background-color: white;
-  float: left;
+  font-family: 'Roboto', sans-serif;;
 }
 
 /*formatting for anything that has a "heading 1"*/
 h1 {
   color: black;
-  text-shadow: 5px 2px 4px #d4dcff;
+  /*text-shadow: 5px 2px 4px #d4dcff;
   padding-top: 15px;
   border-style: hidden;
-  border-width: 10px;
+  border-width: 10px;*/
   font-size: 250%;
 }
 
@@ -147,4 +149,29 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 100%;
+}
+
+
+/*Custon Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
 }

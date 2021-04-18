@@ -1,6 +1,8 @@
 /*Version 2.02*/
 body {
-  float: center;
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
@@ -13,8 +15,10 @@ body {
 }
 
 .title {
-  font-family: "Roboto";
-  font-weight: 450;
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  font-size: 4em;
 }
 
 .orange {
@@ -52,12 +56,13 @@ body {
 }
 
 .Paragragh {
+    padding: 3%;
     float: inherit;
     font-size: medium;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     padding: 20px;
-    width: 75%;
+    width: 95%;
     border-style: solid;
     border-width: 5px;
     border-color: #000000;
@@ -105,9 +110,9 @@ body {
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 250%;
 
-  animation-name: zoomIn;
+  animation-name: fadeIn;
   animation-duration: 2s;
   animation-delay: -0.05s;
 }
@@ -196,10 +201,34 @@ li {
 .footer {
   clear: both;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: white;
-  background-color: #000000;
+  font-weight: 500;
+  color: gray;
+  background-color: #d9d9d9;
   padding-top: 50px;
   padding-bottom: 50px;
-  font-size: 75%;
+  font-size: 80%;
+}
+
+/*Custon Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
 }

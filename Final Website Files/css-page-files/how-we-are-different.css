@@ -1,6 +1,15 @@
-/*Version 1.6*/
-h1 {
-  font-size: 200%;
+/*Version 3.091*/
+body {
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  font-size: 4em;
 }
 
 .nav {
@@ -39,14 +48,19 @@ h1 {
 }
 
 .Paragragh {
-    float: left;
+    float left;
     font-size: medium;
-    padding: 10px;
-    border-style: groove;
+    font-family: 'Lato', sans-serif;
+    padding: 50px;
+    border-style: solid;
     border-width: 5px;
-    border-color: #00008B;
-    background-color: none;
-    margin-top: 50px;
+    border-color: gray;
+    background-color: #white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 100px;
 }
 
 .organization {
@@ -58,7 +72,6 @@ h1 {
 }
 
 h1 {
-  font-size: 300%;
 }
 
 h2 {

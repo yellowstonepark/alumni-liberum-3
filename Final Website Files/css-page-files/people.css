@@ -1,6 +1,9 @@
 /*Version 1.1*/
 body {
-  background: linear-gradient(#8fc3ff, #1f202e);
+  /*background: linear-gradient(#8fc3ff, #1f202e);*/
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
@@ -14,19 +17,27 @@ body {
   margin-left: -5px;
 }
 
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  font-size: 3em;
+}
+
 .Paragragh {
     float left;
     font-size: medium;
     padding: 10px;
     border-style: solid;
     border-width: 5px;
-    border-color: #515c54;
-    background-color: #F5F5DC;
+    border-color: gray;
+    background-color: #white;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -o-border-radius: 8px;
     -ms-border-radius: 8px;
     border-radius: 100px;
+    font-family: 'Lato', sans-serif;
 }
 
 .organization {
@@ -73,15 +84,13 @@ input:hover {
 }
 
 h1 {
+}
+
+h2 {
   font-size: 200%;
   font-style: normal;
   font-stretch: condensed;
   margin-top: 0px;
-}
-
-h2 {
-  font-size: 300%;
-  font-weight: bold;
 }
 
 img {

@@ -1,4 +1,10 @@
 /*Version 2.02*/
+body {
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav {
   font-size: 110%;
   margin-top: 35px;
@@ -11,8 +17,10 @@
 }
 
 .title {
-  font-family: "Roboto";
-  font-weight: 450;
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  font-size: 3em;
 }
 
 .organization {
@@ -48,8 +56,7 @@
 }
 
 h1 {
-  font-size: 450%;
-  font-weight: 600;
+
 }
 
 h2 {
@@ -60,6 +67,12 @@ body {
   animation-name: fadeIn;
   animation-duration: 2s;
   animation-delay: -0.05s;
+}
+
+p {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 .xxx {

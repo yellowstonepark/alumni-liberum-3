@@ -1,4 +1,10 @@
 /*Version 2.01*/
+body {
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav {
   font-size: 110%;
   margin-top: 35px;
@@ -44,9 +50,14 @@
   color: white;
 }
 
+.title {
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  font-size: 4em;
+}
+
 h1 {
-  font-size: 500%;
-  font-weight: 600;
 }
 
 h2 {
@@ -59,8 +70,16 @@ body {
   animation-delay: -0.05s;
 }
 
-.Paragragh {
-    font-size: 110%;
+.paragraph {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000000;
+    background-color: #FFF;
+    margin-top: 50px;
 }
 
 #Moderates {
@@ -85,18 +104,17 @@ body {
   min-width: 500px;
 }
 
-.whichone {
-  float: left;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 20px;
-  padding-top: 20px;
-  border-style: groove;
+#whichone {
+  display: inline-block;
+  position: auto;
+  border: 3px solid black;
+  padding: 10px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
-.which2one {
+#which2one {
   float: left;
   padding-left: 10%;
   padding-right: 10%;
