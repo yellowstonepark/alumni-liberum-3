@@ -93,8 +93,8 @@ img {
     font-size: 150%;
   }
   img {
-    width: 90%;
-    height: 90%;
+    width: 450px;
+    height: 450px;
   }
   .navButton {
     border: none;
@@ -119,9 +119,12 @@ img {
     width: auto;
     height: auto;
   }
+  .title {
+    padding-top: 300px;
+  }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1500px) {
   .navButton {
     border: none;
     color: white;
@@ -144,26 +147,6 @@ img {
   .navButton:hover {
     background-color: #008CBA;
     color: white;
-  }
-}
-
-@media only screen and (max-width: 1500px) {
-  .organization {
-    float: right;
-    width: auto;
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 125%;
-    margin-top: -150px;
-    margin-bottom: -100px;
-    overflow: visible;
-
-    animation-name: lightSpeedInRight;
-    animation-duration: 2s;
-    animation-delay: -0.05s;
   }
 }
 
