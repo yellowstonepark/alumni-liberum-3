@@ -19,5 +19,5 @@ function number6 () {
   window.location.assign("https://math.alumni-liberum.com");
 }
 function number7 () {
-  window.location.assign("https://about-us.alumni-liberum.com");
+  window.location.assign("https://about.alumni-liberum.com");
 }

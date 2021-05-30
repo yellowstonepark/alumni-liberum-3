@@ -9,9 +9,10 @@ body {
   display: block;
   width: 12%;
   border-radius: 50%;
-  line-height: auto;
+  line-height: 1.25;
   position: relative;
   padding: 0px;
+  margin: -5px;
   background: linear-gradient(150deg, #a7cfdf 0%,#000e2b 100%);
   box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.9);
 }
@@ -25,6 +26,10 @@ body {
 .res-circle:hover {
   background: linear-gradient(150deg, #a7cfdf 0%,#3f5e91 100%);
   box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.9);
+  /*width: 15%;
+  length: 15%;*/
+  border: 3px solid yellow;
+  cursor: pointer;
 }
 
 .circle-txt {
@@ -33,17 +38,54 @@ body {
   bottom: 50%;
   width: 100%;
   text-align: center;
+  vertical-align: middle;
   font-family: arial, sans-serif;
   font-weight: bold;
 }
 
 .navigation {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   padding-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
+.xx {
+  animation-name: xx;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 20;
+}
+
+@keyframes xx {
+  0%   {top: 0px;}
+  25%  {top: -5px;}
+  50%  {top: 0px;}
+  75%  {top: 5px;}
+  100% {top: 0px;}
+}
+
+.yy {
+  animation-name: yy;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 20;
+}
+
+@keyframes yy {
+  0%   {top: 0px;}
+  25%  {top: 5px;}
+  50%  {top: 0px;}
+  75%  {top: -5px;}
+  100% {top: 0px;}
+}
+
+
+/*
 .attendance {
   display: block;
   width: 30%;
@@ -59,40 +101,12 @@ body {
   content: "";
   display: block;
   padding-bottom: 100%;
-}
-
-.extralinks {
-  display: none;
-}
-
-.extralinks:hover {
-  margin-top: -50px;
-  display: block;
-  background: #555;
-}
-
-div ul li {
-  display: inline-block;
-  background: #666;
-  color: white;
-  position: relative;
-  padding-top: 0px;
-}
-
-ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.res-circle:hover .extralinks {
-  display: block;
-}
-
-@media screen and (max-width: 600px) {
+}*/
+/*
+@media screen and (max-width: 600px) {*/
   /*CSS Styling*/
   /*Version 1.0.0*/
-
+  /*
   body {
     background-color: azure;
   }
@@ -158,3 +172,4 @@ ul li a {
     length: 120%;
   }
 }
+*/
